@@ -29,6 +29,7 @@ group :test do
     gem "capybara", ">= 2.0.2"
 end
 
+gem 'mandrill-api'
 gem "devise", ">= 2.2.3"
 gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "figaro", ">= 0.5.3"
