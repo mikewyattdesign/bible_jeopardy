@@ -1,0 +1,100 @@
+@import url(http://fonts.googleapis.com/css?family=Russo+One);
+
+body{
+background-color: #010106;
+}
+
+#container{
+    width:960px;
+    margin:60px auto;
+}
+
+.jbg{
+background: #3d567f; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNkNTY3ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzM4NWE5MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNTM5ODQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #3d567f 0%, #385a91 44%, #253984 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d567f), color-stop(44%,#385a91), color-stop(100%,#253984)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 100%); /* IE10+ */
+background: linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d567f', endColorstr='#253984',GradientType=0 ); /* IE6-8 */
+}
+
+.jbg:hover{
+background: #3d567f; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNkNTY3ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzM4NWE5MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iIzI1Mzk4NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmOTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #3d567f 0%, #385a91 44%, #253984 99%, #ffff98 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d567f), color-stop(44%,#385a91), color-stop(99%,#253984), color-stop(100%,#ffff98)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 99%,#ffff98 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 99%,#ffff98 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 99%,#ffff98 100%); /* IE10+ */
+background: linear-gradient(top, #3d567f 0%,#385a91 44%,#253984 99%,#ffff98 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d567f', endColorstr='#ffff98',GradientType=0 ); /* IE6-8 */
+}
+
+.category-column{
+    display:inline-block;
+    width:150px;
+    text-align:center;
+
+}
+
+.category{
+    border: 1px solid #FFFF98;
+    display: table;
+    height: 70px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 0 5px;
+    position: relative;
+    /*width: 138px;*/
+
+    cursor:pointer;
+}
+
+.category h2{
+    color: #FFFFFF;
+        display: table-cell;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 0;
+        text-shadow: 2px 2px 4px #000000;
+        text-transform: uppercase;
+        vertical-align: middle;
+    width:150px;
+
+}
+
+.clue{
+    overflow:hidden;
+    height:105px;
+    margin-bottom:5px;
+    cursor:pointer;
+
+
+}
+
+.clue h2{
+    color: #FFFF98;
+        font-family: 'Russo One','Emblema One',cursive;
+    font-size: 32px;
+        line-height: 100px;
+        margin: 0;
+        text-shadow: 3px 3px 0 #000000;
+}
+
+.value:before{
+    content:"$";
+}
+
+.prompt{
+    font-size: 50px;
+    min-height:200px;
+}
+
+.prompt:first-letter{
+    text-transform:capitalize;
+}
