@@ -11,6 +11,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130810214807) do
+
+  create_table "boards", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "clues", :force => true do |t|
+    t.string   "prompt"
+    t.string   "response"
+    t.string   "passage"
+    t.integer  "difficulty"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "scores", :force => true do |t|
+    t.integer  "value"
+    t.integer  "user_id"
+    t.integer  "board_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "scores", ["board_id"], :name => "index_scores_on_board_id"
+  add_index "scores", ["user_id"], :name => "index_scores_on_user_id"
 
 end
