@@ -10,8 +10,8 @@
 <body>
     <%= render "shared/main_navigation" %>
     <div class="container-narrow">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"<%= alert %></p>
+        <% if notice %><p class="notice"><%= notice %></p><% end %>
+        <% if alert %><p class="alert"<%= alert %></p><% end %>
     <%= yield %>
     </div>
 </body>
