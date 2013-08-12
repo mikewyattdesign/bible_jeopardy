@@ -6,6 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Category.delete_all
-[""].each do |category|
+["Books of the Bible", "Old Testament", "New Testament", "Jesus", "Biblical Geography", "Vocabulary"].each do |category|
     Category.find_or_create_by_name(category)
 end
