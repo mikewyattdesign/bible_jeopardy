@@ -1,3 +1,17 @@
+.navbar-inner {
+    background-color: white;
+    background-image: none;
+}
+
 .sign-up {
     color: white !important;
+    background-color: $green;
+    @include background-image(linear-gradient(to bottom, #62c462, #51a351));
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        @include background-image(linear-gradient(to bottom, darken(#62c462, 5%), darken(#51a351, 5%)));
+        @include transition (background-image 0.5s linear);
+    }
+
 }
