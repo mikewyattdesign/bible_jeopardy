@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130812033108) do
+ActiveRecord::Schema.define(:version => 20130812145151) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -37,11 +37,37 @@ ActiveRecord::Schema.define(:version => 20130812033108) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "boards_categories", :id => false, :force => true do |t|
+    t.integer "board_id"
+    t.integer "category_id"
+    t.integer "position"
+  end
+
+  add_index "boards_categories", ["board_id", "category_id"], :name => "index_boards_categories_on_board_id_and_category_id"
+  add_index "boards_categories", ["category_id", "board_id"], :name => "index_boards_categories_on_category_id_and_board_id"
+
+  create_table "boards_clues", :id => false, :force => true do |t|
+    t.integer "board_id"
+    t.integer "clue_id"
+    t.integer "position"
+  end
+
+  add_index "boards_clues", ["board_id", "clue_id"], :name => "index_boards_clues_on_board_id_and_clue_id"
+  add_index "boards_clues", ["clue_id", "board_id"], :name => "index_boards_clues_on_clue_id_and_board_id"
+
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "categories_clues", :id => false, :force => true do |t|
+    t.integer "category_id"
+    t.integer "clue_id"
+  end
+
+  add_index "categories_clues", ["category_id", "clue_id"], :name => "index_categories_clues_on_category_id_and_clue_id"
+  add_index "categories_clues", ["clue_id", "category_id"], :name => "index_categories_clues_on_clue_id_and_category_id"
 
   create_table "clues", :force => true do |t|
     t.string   "prompt"
