@@ -5,8 +5,8 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# Use sqlite3 as db
-gem 'sqlite3'
+gem "pg"
+
 
 group :assets do
     gem 'sass-rails',   '~> 3.2.3'
