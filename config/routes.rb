@@ -31,4 +31,8 @@ BibleJeopardy::Application.routes.draw do
   resources :clues do
     collection {post :import}
   end
+
+  resources :boards
+
+
 end

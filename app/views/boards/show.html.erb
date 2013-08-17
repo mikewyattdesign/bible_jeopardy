@@ -1,2 +1,14 @@
-<h1>Boards#show</h1>
-<p>Find me in app/views/boards/show.html.erb</p>
+<h1><%= @board.name %></h1>
+<div class="board">
+<% @board.categories.uniq.each do |category| %>
+<div class="category-column">
+    <div class="category jbg">
+        <h2><%=category.name %></h2>
+    </div>
+    <% cat_clues = category.clues.order("difficulty").select{|c| c.boards.include?(@board)}.uniq %>
+    <% cat_clues.each do |clue| %>
+    <%= render "boards/clue", clue: Clue.find(clue.id) %>
+    <% end %>
+</div>
+<% end %>
+</div>
