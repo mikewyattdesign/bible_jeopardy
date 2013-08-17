@@ -9,3 +9,4 @@ Category.delete_all
 ["Books of the Bible", "Old Testament", "New Testament", "Jesus", "Biblical Geography", "Vocabulary"].each do |category|
     Category.find_or_create_by_name(category)
 end
+

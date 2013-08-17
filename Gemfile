@@ -15,6 +15,7 @@ group :assets do
 end
 gem 'bootstrap-sass'
 gem 'bourbon'
+gem 'roo'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
