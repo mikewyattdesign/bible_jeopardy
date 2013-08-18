@@ -1,4 +1,10 @@
-<h1><%= @board.name %></h1>
+<div class="row-fluid">
+<h1 class="span4"><%= @board.name %></h1>
+<div class="span4 offset4 board-direction">
+<%= link_to 'Previous Board', board_path(@board.previous), class: "btn" %>
+<%= link_to 'Next Board', board_path(@board.next), class: 'btn' %>
+</div>
+</div>
 <div class="board">
 <% @board.categories.uniq.each do |category| %>
 <div class="category-column">

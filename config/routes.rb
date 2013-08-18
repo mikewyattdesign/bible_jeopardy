@@ -13,6 +13,7 @@ BibleJeopardy::Application.routes.draw do
   get "boards/edit"
   get "boards/show"
   get "boards/new"
+  get "practice" => "boards#random_practice" 
 
   get "clues/index"
   get "clues/edit"
