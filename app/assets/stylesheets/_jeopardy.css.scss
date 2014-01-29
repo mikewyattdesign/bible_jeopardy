@@ -73,6 +73,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d567f', end
 
 }
 
+.clue.answered h2 {
+    color: transparent;
+    text-shadow: none;
+}
+
 .clue h2{
     color: #FFFF98;
         font-family: 'Russo One','Emblema One',cursive;
@@ -98,6 +103,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d567f', end
 
 .board-direction .btn {
     margin-top: 15px;
+}
+
+.slider .button {
+    cursor: pointer;
 }
 
 .hidden {

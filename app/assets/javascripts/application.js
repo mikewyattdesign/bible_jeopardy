@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require reveal-answer
+//= require board
 //= require_tree .
