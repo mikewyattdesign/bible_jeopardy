@@ -4,6 +4,6 @@ FactoryGirl.define do
   factory :clueset do
     clue nil
     board nil
-    position 1
+    sequence(:position)
   end
 end
