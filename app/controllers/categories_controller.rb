@@ -10,4 +10,10 @@ class CategoriesController < ApplicationController
 
   def new
   end
+
+  private
+
+  def categories_params
+  	params.require(:category).permit(:name)
+  end
 end

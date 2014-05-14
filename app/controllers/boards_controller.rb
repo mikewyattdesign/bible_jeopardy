@@ -21,4 +21,10 @@ class BoardsController < ApplicationController
     random_board = prng.rand(1..Board.all.count)
     redirect_to board_path(Board.find(random_board))
   end
+
+  private
+
+  def boards_params
+    params.require(:board).permit(:name, :difficulty)
+  end
 end

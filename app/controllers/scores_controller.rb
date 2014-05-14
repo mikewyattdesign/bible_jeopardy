@@ -10,4 +10,10 @@ class ScoresController < ApplicationController
 
   def new
   end
+
+  private
+
+  def scores_params
+  	params.require(:score).permit(:value)
+  end
 end

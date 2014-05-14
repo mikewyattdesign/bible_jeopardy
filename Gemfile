@@ -1,41 +1,66 @@
 source 'https://rubygems.org'
+ruby '2.1.0'
 
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "pg"
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
 
-group :assets do
-    gem 'sass-rails',   '~> 3.2.3'
-    gem 'coffee-rails', '~> 3.2.1'
-    gem 'uglifier', '>= 1.0.3'
-end
-gem 'bootstrap-sass'
+# Use bootstrap for styling
+gem 'bootstrap-sass', '~> 3.1.0'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
+
 gem 'bourbon'
 gem 'roo'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
 
-gem 'rspec-rails', :group => [:development, :test]
-gem 'factory_girl_rails', :group => [:development, :test]
+
+
+group :development do
+    gem "quiet_assets", ">= 1.0.1"
+    gem "better_errors", ">= 0.3.2"
+    gem "binding_of_caller", ">= 0.6.8"
+end
+
+group :development, :test do
+    gem 'rspec-rails'
+    gem 'factory_girl_rails'
+    gem 'sqlite3'
+end
 
 group :test do
-    gem "email_spec", ">= 1.4.0"
+    # Use faker for fake data generation
+    gem 'faker', '~> 1.1.2'
+
+    # Use Capybara for functional testing
+    gem 'capybara', '2.2.1'
+
+    # Use database cleaner to (predictably) clean the db after tests
+    gem 'database_cleaner', '~> 1.0.1'
+
+    # Use launchy to view web results of integration tests
+    gem 'launchy', '~> 2.3.0'
+
+    # Make selenium test driver available
+    gem 'selenium-webdriver', '~> 2.39.0'
     gem "cucumber-rails", ">= 1.3.0", :require => false
-    gem "launchy", ">= 2.1.2"
-    gem "capybara", ">= 2.0.2"
+    gem "email_spec", ">= 1.4.0"
 end
 
 gem 'mandrill-api'
-gem "devise", ">= 2.2.3"
-gem "quiet_assets", ">= 1.0.1", :group => :development
+gem "devise"
 gem "figaro", ">= 0.5.3"
-gem "better_errors", ">= 0.3.2", :group => :development
-gem "binding_of_caller", ">= 0.6.8", :group => :development
 gem 'jquery-rails'
 gem 'turbolinks'
 
@@ -43,6 +68,11 @@ group :doc do
     gem 'sdoc', require: false
 end
 
+
+group :production do
+    gem 'rails_12factor'
+    gem "pg"
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -50,7 +80,7 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -58,3 +88,4 @@ end
 # To use debugger
 # gem 'debugger'
 gem 'newrelic_rpm'
+    
