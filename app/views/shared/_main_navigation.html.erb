@@ -1,12 +1,12 @@
 <header>
-    <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-                <%= link_to "BIBLE Jeopardy!", root_path, class: "brand" %>
+            <div class="navbar-inner">
+                <%= link_to "BIBLE Jeopardy!", root_path, class: "navbar-brand" %>
                 <nav class="pull-right">
                     <ul class="nav">
                         <!--<%= nav_link "Play", '#' %>-->
-                        <%= nav_link "Practice", '/practice' %>
+                        <%= nav_link "Practice", '/practice', false, 'btn-default' %>
                         <!--<%= nav_link "About", "/about" %>
                         <%= nav_link 'Sign Up', new_user_registration_path, false, "sign-up" %>-->
                     </ul>
