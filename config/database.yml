@@ -5,13 +5,10 @@ development:
   pool: 5
 
 test: &test
-  host: localhost
-  adapter: postgresql
+  adapter: sqlite3
   encoding: unicode
-  database: bible_jeopardy_test
+  database: db/test.sqlite3
   pool: 5
-  username: bible_jeopardy
-  password: Katalyst2
 
 production:
   host: localhost
