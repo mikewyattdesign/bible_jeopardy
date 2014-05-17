@@ -37,14 +37,20 @@ group :development, :test do
     gem 'rspec-rails'
     gem 'factory_girl_rails'
     gem 'sqlite3'
+
+    # Use Capybara for functional testing
+    gem 'capybara', '2.2.1'
+
+    # Use Sauce Labs for automated cross-browser/cross-OS testing
+    gem 'sauce', '~> 3.1.1'
+    gem 'sauce-connect'
+    gem 'parallel_tests'
 end
 
 group :test do
     # Use faker for fake data generation
     gem 'faker', '~> 1.1.2'
 
-    # Use Capybara for functional testing
-    gem 'capybara', '2.2.1'
 
     # Use database cleaner to (predictably) clean the db after tests
     gem 'database_cleaner', '~> 1.0.1'
