@@ -7,3 +7,5 @@ addons:
     username: "biblejeopardy"
     access_key: 
       secure: "MLTu5n2bef7qjfldeH3dk9PPYE9miPRu6hXEEqDdQaZiK2BLi1Ib9y4N0ct9do0wQX2FIXCLrnbB63RmSH3nudaBAm9XF1avrPrbQLUVDGvQH+B5/5w/sGngMdhGcQzzuA7t+dM0W3I5giX5HxvBvR0/MOTOgIi3ZSlK0eqGlJs="
+  code_climate:
+    repo_token: 9f59259b978c00591080f601ccabcc1d238e8b76b1150b357531c5df57679619 

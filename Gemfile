@@ -60,8 +60,11 @@ group :test do
 
     # Make selenium test driver available
     gem 'selenium-webdriver', '~> 2.39.0'
-    gem "cucumber-rails", ">= 1.3.0", :require => false
+    gem "cucumber-rails", ">= 1.3.0", require: false
     gem "email_spec", ">= 1.4.0"
+
+    # Use Code Climate to report on test coverage and code quality
+    gem "codeclimate-test-reporter", require: nil
 end
 
 gem 'mandrill-api'
