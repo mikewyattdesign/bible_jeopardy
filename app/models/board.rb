@@ -4,6 +4,9 @@ class Board < ActiveRecord::Base
   has_many :cluesets
   has_many :clues, through: :cluesets
 
+  validates :name, presence: true
+  
+
   def next
     unless Board.where("difficulty > ?", self.difficulty).empty?
         Board.where("difficulty > ?", self.difficulty).order("difficulty").first 
