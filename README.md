@@ -1,4 +1,5 @@
-== Bible Jeopardy Rails App
+Bible Jeopardy Rails App
+========================
 
 [![Build Status](https://travis-ci.org/mikewyattdesign/bible_jeopardy.svg?branch=master)](https://travis-ci.org/mikewyattdesign/bible_jeopardy)
 [![Code Climate](https://codeclimate.com/github/mikewyattdesign/bible_jeopardy.png)](https://codeclimate.com/github/mikewyattdesign/bible_jeopardy)
