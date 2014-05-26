@@ -8,7 +8,7 @@ test: &test
   adapter: sqlite3
   encoding: unicode
   pool: 5
-  database: db/test.sqlite3
+  database: ":memory:"
   timeout: 500
 
 production:
