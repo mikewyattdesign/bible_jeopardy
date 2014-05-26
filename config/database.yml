@@ -7,8 +7,9 @@ development:
 test: &test
   adapter: sqlite3
   encoding: unicode
-  database: db/test.sqlite3
   pool: 5
+  database: <%= ENV["TRAVIS"] ? ":memory:" : "db/test.sqlite3" %> 
+  timeout: 500
 
 production:
   host: localhost
