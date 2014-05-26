@@ -1,6 +1,7 @@
 == Bible Jeopardy Rails App
 
 [![Build Status](https://travis-ci.org/mikewyattdesign/bible_jeopardy.svg?branch=master)](https://travis-ci.org/mikewyattdesign/bible_jeopardy)
+[![Code Climate](https://codeclimate.com/github/mikewyattdesign/bible_jeopardy.png)](https://codeclimate.com/github/mikewyattdesign/bible_jeopardy)
 
 This app will let people play a scored version of the bible jeopardy game at 
 http://dl.dropboxusercontent.com/u/15672882/MLAW/Ferguson/jeopardy.html
