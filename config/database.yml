@@ -8,7 +8,7 @@ test: &test
   adapter: sqlite3
   encoding: unicode
   pool: 5
-  database: <%= ENV["TRAVIS"] ? ":memory:" : "db/test.sqlite3" %> 
+  database: <%= ENV["TRAVIS"] ? ":memory:" : "db/test.sqlite3" %>
   timeout: 500
 
 production:
