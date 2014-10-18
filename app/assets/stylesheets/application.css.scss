@@ -3,6 +3,7 @@ $iconWhiteSpritePath: asset-path('glyphicons-halflings-white.png', image);
 
 @import "colors";
 @import "bourbon";
+@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap-custom";
 @import "main-navigation";

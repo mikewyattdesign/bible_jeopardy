@@ -36,7 +36,7 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.1.1.1)
+    bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     bourbon (3.2.1)
       sass (~> 3.2)
@@ -270,7 +270,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors (>= 0.3.2)
   binding_of_caller (>= 0.6.8)
-  bootstrap-sass (~> 3.1.0)
+  bootstrap-sass (~> 3.2.0.2)
   bourbon
   capybara (= 2.2.1)
   codeclimate-test-reporter
