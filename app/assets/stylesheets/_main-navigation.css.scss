@@ -15,3 +15,15 @@
     }
 
 }
+.log-out {
+    color: white !important;
+    background-color: $red;
+    @include background-image(linear-gradient(to bottom, #C46262, #A35151));
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        @include background-image(linear-gradient(to bottom, darken(#C46262, 5%), darken(#A35151, 5%)));
+        @include transition (background-image 0.5s linear);
+    }
+
+}

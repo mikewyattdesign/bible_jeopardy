@@ -8,7 +8,11 @@
                     <!--<%= nav_link "Play", '#' %>-->
                     <%= nav_link "Practice", '/practice', false %>
                     <!--<%= nav_link "About", "/about" %>-->
-                    <%= nav_link 'Sign Up', new_user_registration_path, false, "sign-up" %>
+                    <% if user_signed_in? %>
+                        <%= nav_link 'Logout', destroy_user_session_path, false, 'log-out' %> 
+                    <% else %>
+                        <%= nav_link 'Sign In', new_user_session_path, false, "sign-up" %>
+                    <% end %>
                 </ul>
         </div>
     </div>
