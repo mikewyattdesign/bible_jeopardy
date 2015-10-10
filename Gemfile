@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.2.3'
 
 gem 'rails', '4.1.0'
 
@@ -82,8 +82,8 @@ group :production do
     gem 'rails_12factor'
     gem "pg"
     gem 'newrelic_rpm'
-    # Use unicorn as the app server
-    gem 'unicorn'
+    # Use puma as the app server
+    gem 'puma'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
