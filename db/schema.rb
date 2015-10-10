@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20130817213558) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true
@@ -33,15 +33,15 @@ ActiveRecord::Schema.define(version: 20130817213558) do
 
   create_table "boards", force: true do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.integer  "difficulty"
   end
 
   create_table "categories", force: true do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "categories_clues", id: false, force: true do |t|
@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(version: 20130817213558) do
     t.integer  "category_id"
     t.integer  "board_id"
     t.integer  "position"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "categorysets", ["board_id"], name: "index_categorysets_on_board_id"
@@ -68,16 +68,16 @@ ActiveRecord::Schema.define(version: 20130817213558) do
     t.string   "response"
     t.string   "passage"
     t.integer  "difficulty"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "cluesets", force: true do |t|
     t.integer  "clue_id"
     t.integer  "board_id"
     t.integer  "position"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "cluesets", ["board_id"], name: "index_cluesets_on_board_id"
@@ -87,8 +87,8 @@ ActiveRecord::Schema.define(version: 20130817213558) do
     t.integer  "value"
     t.integer  "user_id"
     t.integer  "board_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "scores", ["board_id"], name: "index_scores_on_board_id"
@@ -105,8 +105,8 @@ ActiveRecord::Schema.define(version: 20130817213558) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
