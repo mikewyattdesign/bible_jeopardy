@@ -31,12 +31,12 @@ group :development do
     gem "quiet_assets", ">= 1.0.1"
     gem "better_errors", ">= 0.3.2"
     gem "binding_of_caller", ">= 0.6.8"
+    gem 'pg'
 end
 
 group :development, :test do
     gem 'rspec-rails'
     gem 'factory_girl_rails'
-    gem 'sqlite3'
 
     # Use Capybara for functional testing
     gem 'capybara', '2.2.1'
@@ -50,6 +50,7 @@ end
 group :test do
     # Use faker for fake data generation
     gem 'faker', '~> 1.1.2'
+    gem 'sqlite3'
 
 
     # Use database cleaner to (predictably) clean the db after tests
