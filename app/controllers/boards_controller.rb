@@ -17,9 +17,7 @@ class BoardsController < ApplicationController
   end
 
   def random_practice
-    prng = Random.new(Time.now.to_i)
-    random_board = prng.rand(1..Board.all.count)
-    redirect_to board_path(Board.find(random_board))
+    redirect_to Board.all.shuffle.first
   end
 
   private

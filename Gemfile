@@ -31,7 +31,6 @@ group :development do
     gem "quiet_assets", ">= 1.0.1"
     gem "better_errors", ">= 0.3.2"
     gem "binding_of_caller", ">= 0.6.8"
-    gem 'pg'
 end
 
 group :development, :test do
@@ -72,16 +71,18 @@ gem 'mandrill-api'
 gem "devise"
 gem "figaro", ">= 0.5.3"
 gem 'jquery-rails'
-gem 'turbolinks'
+gem 'turbolinks', '~> 2.5.3'
 
 group :doc do
     gem 'sdoc', require: false
 end
 
+group :development, :production do
+    gem "pg"
+end
 
 group :production do
     gem 'rails_12factor'
-    gem "pg"
     gem 'newrelic_rpm'
     # Use puma as the app server
     gem 'puma'
