@@ -11,14 +11,14 @@ describe Clue do
 
   it 'should be invalid without a prompt' do
     new_clue = Clue.create
-    expect(new_clue.invalid?).to be_true
-    expect(new_clue.errors[:prompt].any?).to be_true
+    expect(new_clue.invalid?).to be_truthy
+    expect(new_clue.errors[:prompt].any?).to be_truthy
   end
 
   it 'should be invalid without a response' do
     new_clue = Clue.create
-    expect(new_clue.invalid?).to be_true
-    expect(new_clue.errors[:response].any?).to be_true
+    expect(new_clue.invalid?).to be_truthy
+    expect(new_clue.errors[:response].any?).to be_truthy
   end
 
 

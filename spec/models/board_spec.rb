@@ -10,8 +10,8 @@ describe Board do
     end
 
     it 'should be invalid without a name' do
-        new_board = Board.create
-        expect(new_board.invalid?).to be_true
-        expect(new_board.errors[:name].any?).to be_true
+        new_board = Board.new(name: nil)
+        expect(new_board).to_not be_valid
+        expect(new_board.errors[:name].any?).to be_truthy
     end
 end

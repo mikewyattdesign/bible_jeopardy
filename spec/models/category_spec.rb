@@ -11,7 +11,7 @@ describe Category do
 
     it 'should be invalid without a name' do
         new_category = Category.create
-        expect(new_category.invalid?).to be_true
-        expect(new_category.errors[:name].any?).to be_true
+        expect(new_category.invalid?).to be_truthy
+        expect(new_category.errors[:name].any?).to be_truthy
     end
 end
